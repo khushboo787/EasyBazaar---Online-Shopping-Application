@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/583f110147.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./grocery.css">
+    <title>EasyBazaar | Grocery</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navBar">
+            <a href="/index.html">
+                <img id="logo" src="/assets/logo.png" alt="logo">
+            </a>
+
+            <div class="searchContainer">
+                <div class="navSearch">
+                    <form>
+                        <input type="text" id="searchProduct">
+                        <input type="button" value="Search" class="btn">
+                    </form>
+                </div>
+                
+                <a href="/customer assets/cart/cart.html" class="addtocart">
+                    <span class="itemNumber">0</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+                    <span>My Cart</span>
+                </a>
+
+                <a href="#" class="nav-btn">
+                    <div>Logout</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product--slider">
+            <div class="slider">
+                <div class="slide">
+                  <div class="testimonial">
+                    <img src="/assets/Landing-page/grocery/1.jpg" alt="product 1">
+                  </div>
+                </div>
+        
+                <div class="slide">
+                  <div class="testimonial">
+                    <img src="/assets/Landing-page/grocery/2.jpg" alt="product 2">
+                  </div>
+                </div>
+        
+                <div class="slide">
+                  <div class="testimonial">
+                    <img src="/assets/Landing-page/grocery/3.jpg" alt="product 3">
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="testimonial">
+                    <img src="/assets/Landing-page/grocery/4.jpg" alt="product 4">
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="testimonial">
+                    <img src="/assets/Landing-page/grocery/5.jpg" alt="product 5">
+                  </div>
+                </div>
+        
+                <button class="slider__btn slider__btn--left">&larr;</button>
+                <button class="slider__btn slider__btn--right">&rarr;</button>
+                <div class="dots"></div>
+            </div>
+
+            <div class="women--banner">
+                <h1>Grocery Special Offer</h1>
+                <img src="/assets/Landing-page/grocery/grocery 1.jpg" alt="women special offer banner">
+            </div>
+
+        </section>
+
+        <section id="section--two">
+            <h1 style="text-align: center;">Our Best Offers For You</h1>
+            <div class="product--items__container">
+                
+                <!-- append here first- atag
+                     then p1 tag
+                     then p2 tag
+                     then span1 tag
+                     then span2 tag -->
+            </div>
+            <div class="women--banner">
+                <h1>Grocery Special Offer</h1>
+                <img src="/assets/Landing-page/grocery/grocery 2.jpg" alt="women special offer banner">
+            </div>
+
+            <div class="women--banner">
+                <h1>Grocery Special Offer</h1>
+                <img src="/assets/Landing-page/grocery/grocery 3.jpg" alt="women special offer banner">
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div id="footer-div">
+              <div class="about-blog">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Grocury</a>
+              </div>
+              <div class="about-blog">
+                <a href="#">About</a>
+                <a href="#">Privacy Poliy</a>
+                <a href="#">Affiliate Programe</a>
+                <a href="#">Term And Condition</a>
+              </div>
+              <div id="social-icon">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+              </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script>
+    // Slider ==================================================================================
+        const slides = document.querySelectorAll('.slide');
+        const btnLeft = document.querySelector('.slider__btn--left');
+        const btnRight = document.querySelector('.slider__btn--right');
+        const dotContainer = document.querySelector('.dots');
+        let curSlide = 0;
+        let maxSlide = slides.length;
+
+        const createDots = () => {
+        slides.forEach((s, i) => {
+            dotContainer.insertAdjacentHTML('beforeend', `<button class="dots__dot" data-slide="${i}"></button>`)
+        })
+        }
+        createDots();
+
+        const activeteDots = (slide) => {
+        document.querySelectorAll(".dots__dot").forEach((dot) => {
+            dot.classList.remove('dots__dot--active')
+        })
+        document
+            .querySelector(`.dots__dot[data-slide="${slide}"]`)
+            .classList.add(`dots__dot--active`)
+        }
+        activeteDots(0);
+
+
+        const gotoSlides = (curSlide) => {
+        slides.forEach((e, i) => {
+            e.style.transform = `translateX(${100 * (i - curSlide)}%)`;
+        })
+        }
+        gotoSlides(0);
+
+        // Go to Next Slide
+        const nextSlide = () => {
+        if (curSlide === maxSlide - 1) {
+            curSlide = 0;
+        } else {
+            curSlide++;
+        }
+        gotoSlides(curSlide);
+        activeteDots(curSlide);
+        }
+
+        // Go to Previous Slide
+        const preSlide = function () {
+        if (curSlide === 0) {
+            curSlide = maxSlide - 1;
+        } else {
+            curSlide--;
+        }
+        gotoSlides(curSlide);
+        activeteDots(curSlide);
+        }
+
+        btnRight.addEventListener('click', nextSlide);
+        btnLeft.addEventListener('click', preSlide);
+
+        document.addEventListener('keydown', function (e) {
+        // if (e.key === 'ArrowLeft') preSlide();
+        // if (e.key === 'ArrowRight') nextSlide();
+        // also sortcurcuiting
+        e.key === 'ArrowLeft' && preSlide();
+        e.key === 'ArrowRight' && nextSlide();
+        })
+
+
+
+        dotContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('dots__dot')) {
+            const { slide } = e.target.dataset;
+            gotoSlides(slide);
+            activeteDots(slide);
+        }
+        })
+    </script>
+    <script src="/customer assets/category/category.js"></script>
+</body>
+</html>

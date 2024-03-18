@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Outfit',sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* navbar style */
+.navbar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.logo > a > img{
+    width: 170px;
+    cursor: pointer;
+}
+
+.navbar .sign-in ul li{
+    display: inline;
+    padding: 0 80px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    /* border: 2px solid red; */
+}
+
+.btn {
+    font-size: 1em;
+    border-radius: 5px;
+    padding: .8em 1em;
+    cursor: pointer;
+    border: none;
+    background-color: aquamarine;
+    width: 70%;
+}
+
+
+.btn:hover {
+    background-color: rgb(112, 224, 187);
+}
+
+/* about subscription  */
+
+.about-sub{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.about-sub > h2{
+    padding-bottom: 0.7em;
+}
+
+
+
+/* subscription section style */
+
+.subscription-box{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    margin: auto;
+    margin-top: 5%;
+}
+.box-1{
+    height: 51vh;
+    border: 1px solid rgb(225, 217, 217);
+}
+.box-1 > h2 {
+    text-align: center;
+}
+.box-1:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box-2{
+    height: 55vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.h2-span{
+    color: rgb(186, 178, 178);
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.checkmark{
+    margin: auto;
+    padding: 2em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+}
+
+/* button styling */
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    /* border: 2px solid red; */
+}
+
+.btn {
+    font-size: 1em;
+    border-radius: 5px;
+    padding: .8em 1em;
+    cursor: pointer;
+    border: none;
+    background-color: aquamarine;
+    width: 70%;
+}
+
+
+.btn:hover {
+    background-color: rgb(112, 224, 187);
+}

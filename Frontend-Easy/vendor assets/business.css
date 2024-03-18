@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Outfit',sans-serif;
+    color: #000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar style */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+.navbar .menu-item{
+    margin-right: auto;
+}
+
+.navbar .menu-item ul li{
+    display: inline;
+    padding: 0 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar .menu-item ul li:hover{
+    cursor: pointer;
+}
+.navbar .menu-item ul a{
+    text-decoration: none;
+    padding: 0 0 0 2em;
+}
+
+/* Image section */
+
+.img-wrapper{
+    position: absolute;
+    top: 0;
+    left: 700px;
+}
+
+.img-wrapper .img{
+    background: url("https://media.istockphoto.com/id/1352861912/photo/middle-eastern-family-holding-shopping-bags-standing-on-yellow-studio-background.jpg?b=1&s=170667a&w=0&k=20&c=kbNfm5u4jmCyIeJSA3E5KL7fuQRTu8bPma4hro0g2ks=") no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 500px;
+    z-index: 1;
+    opacity: 0;
+    animation: image-appear 0.0001s linear forwards;
+    animation-delay: 2.4s;
+    display: block;
+    margin: auto;
+}
+
+.img-wrapper > img{
+    width: 500px;
+}
+
+@keyframes image-appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* bolock div style */
+
+.block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #f3efee;
+    animation: block-appear 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1.5s;
+}
+
+.img-wrapper .block{
+    animation-delay: 1.8s;
+}
+
+@keyframes block-appear{
+    0%{
+       left: 0;
+       width: 0%;
+    }
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+
+.logo > img{
+    width: 150px;
+}
+
+/* Text style */
+.text{
+    position: absolute;
+    top: 46%;
+    left: 51.1%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    width: 74%;
+}
+
+.text h1{
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+}
+
+.text h1 label{
+    color: #fff;
+}
+
+.text h1 .text-bar{
+    position: absolute;
+}
+
+.text p{
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    width: 100%;
+    /* padding-left: 0.6em; */
+    padding: 1em 1em 0 0.6em;
+}
+
+.text p .text-bar{
+    position: absolute;
+}
+
+/* button styling */
+
+.btn-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 0;
+    margin-top: 1em;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+.btn {
+    font-size: 1em;
+    border-radius: 5px;
+    padding: .8em 2em;
+    cursor: pointer;
+    border: none;
+    background-color: aquamarine;
+}
+
+
+.btn:hover {
+    background-color: rgb(112, 224, 187);
+}
