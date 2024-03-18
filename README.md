@@ -5,7 +5,10 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 
 
 ### Tech Stack
+.Java
+.Spring
 Backend: Java, Spring Framework, Spring Boot, Hibernate, MySQL
+
 Frontend: HTML, CSS, JavaScript  
 
 
