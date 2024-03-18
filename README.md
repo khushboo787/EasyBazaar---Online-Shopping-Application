@@ -1,1 +1,1 @@
-# EasyBazaar---Online-Shopping-Application
+# EasyBazaar  
