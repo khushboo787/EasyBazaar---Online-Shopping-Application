@@ -44,6 +44,8 @@ Frontend: HTML, CSS, JavaScript
 
 
 
+
+
 ### Installation & Run
 
 Before running the API server, you should update the database config inside the application.properties file.
@@ -69,4 +71,6 @@ http://localhost:8888/swagger-ui.html
 ### EasyBazaar API Module Endpoints
 
 
-  #### Thank you for choosing EasyBazaar for your online shopping needs. Happy shopping! 🛍️
+
+
+                                      Thank you for choosing EasyBazaar for your online shopping needs. Happy shopping! 🛍️
