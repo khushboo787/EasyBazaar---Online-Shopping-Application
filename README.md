@@ -17,7 +17,6 @@ Frontend: HTML, CSS, JavaScript
 ### Features
 
       Customer Module
-
       Allows customers to create accounts and login.
       Provides search functionality to browse products by category.
       Supports sorting and filtering of products by price.
@@ -25,24 +24,19 @@ Frontend: HTML, CSS, JavaScript
       Includes features for tracking order status, viewing order history, and making payments.
       Future enhancements include the ability to provide feedback.
 
-
       Vendor Module
-   
       Provides a dashboard for vendors to manage their accounts and products.
       Allows vendors to add new products, manage quantities, and oversee order management.
       Includes features for tracking sales, managing orders, and analyzing sales data.
       Future enhancements include subscription management and feedback monitoring.
-
-     Shipper Module
-     
-     Enables shippers to update order statuses and handle refund requests.
-
-
-     Admin Module
       
-     Provides an admin dashboard for managing customers, vendors, and feedback.
-     Allows administrators to monitor company revenue and analyze sales data.
-     Future enhancements include revenue tracking and feedback management.
+      Shipper Module
+      Enables shippers to update order statuses and handle refund requests.
+      
+      Admin Module
+      Provides an admin dashboard for managing customers, vendors, and feedback.
+      Allows administrators to monitor company revenue and analyze sales data.
+      Future enhancements include revenue tracking and feedback management.
 
 ### Installation & Run
 
