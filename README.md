@@ -14,14 +14,16 @@ Frontend: HTML, CSS, JavaScript
 3. Vendor Module  
 4. Shipper Module
 
-   ### Features
+### Features
+
     1. Customer Module
-Allows customers to create accounts and login.
-Provides search functionality to browse products by category.
-Supports sorting and filtering of products by price.
-Enables customers to view individual product pages, add items to the cart, and make purchases.
-Includes features for tracking order status, viewing order history, and making payments.
-Future enhancements include the ability to provide feedback.
+
+      Allows customers to create accounts and login.
+      Provides search functionality to browse products by category.
+      Supports sorting and filtering of products by price.
+      Enables customers to view individual product pages, add items to the cart, and make purchases.
+      Includes features for tracking order status, viewing order history, and making payments.
+      Future enhancements include the ability to provide feedback.
 
 
 2. Vendor Module
