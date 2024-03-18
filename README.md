@@ -18,10 +18,10 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 
 
 ### Modules
-1. Customer Module
-2. Admin Module
-3. Vendor Module  
-4. Shipper Module
+- Customer Module
+- Admin Module
+- Vendor Module  
+- Shipper Module
 
 ### Features
 
@@ -29,27 +29,27 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
       Customer Module : 
       - Allows customers to create accounts and login.
       - Provides search functionality to browse products by category.
-      Supports sorting and filtering of products by price.
-      Enables customers to view individual product pages, add items to the cart, and make purchases.
-      Includes features for tracking order status, viewing order history, and making payments.
-      Future enhancements include the ability to provide feedback.
+      - Supports sorting and filtering of products by price.
+      - Enables customers to view individual product pages, add items to the cart, and make purchases.
+      - Includes features for tracking order status, viewing order history, and making payments.
+      - Future enhancements include the ability to provide feedback.
 
 
       Vendor Module : 
-      Provides a dashboard for vendors to manage their accounts and products.
-      Allows vendors to add new products, manage quantities, and oversee order management.
-      Includes features for tracking sales, managing orders, and analyzing sales data.
-      Future enhancements include subscription management and feedback monitoring.
+      - Provides a dashboard for vendors to manage their accounts and products.
+      - Allows vendors to add new products, manage quantities, and oversee order management.
+      - Includes features for tracking sales, managing orders, and analyzing sales data.
+      - Future enhancements include subscription management and feedback monitoring.
 
       
       Shipper Module : 
-      Enables shippers to update order statuses and handle refund requests.
+      - Enables shippers to update order statuses and handle refund requests.
 
       
       Admin Module : 
-      Provides an admin dashboard for managing customers, vendors, and feedback.
-      Allows administrators to monitor company revenue and analyze sales data.
-      Future enhancements include revenue tracking and feedback management.
+      - Provides an admin dashboard for managing customers, vendors, and feedback.
+      - Allows administrators to monitor company revenue and analyze sales data.
+      - Future enhancements include revenue tracking and feedback management.
 
 
 
