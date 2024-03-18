@@ -9,6 +9,7 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 - Java
 - Spring Framework
 - Spring Boot
+- Spring Data JPA
 - Hibernate
 - MySQL
 - HTML
@@ -26,8 +27,8 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 
 
       Customer Module : 
-      Allows customers to create accounts and login.
-      Provides search functionality to browse products by category.
+      - Allows customers to create accounts and login.
+      - Provides search functionality to browse products by category.
       Supports sorting and filtering of products by price.
       Enables customers to view individual product pages, add items to the cart, and make purchases.
       Includes features for tracking order status, viewing order history, and making payments.
