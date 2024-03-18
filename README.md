@@ -9,12 +9,13 @@ Frontend: HTML, CSS, JavaScript
 
 
 ### Modules
-  Customer Module
-  Admin Module
+1. Customer Module
+2. Admin Module
 3. Vendor Module  
 4. Shipper Module
 
 ### Features
+
 
       Customer Module : 
       Allows customers to create accounts and login.
@@ -24,14 +25,17 @@ Frontend: HTML, CSS, JavaScript
       Includes features for tracking order status, viewing order history, and making payments.
       Future enhancements include the ability to provide feedback.
 
+
       Vendor Module : 
       Provides a dashboard for vendors to manage their accounts and products.
       Allows vendors to add new products, manage quantities, and oversee order management.
       Includes features for tracking sales, managing orders, and analyzing sales data.
       Future enhancements include subscription management and feedback monitoring.
+
       
       Shipper Module : 
       Enables shippers to update order statuses and handle refund requests.
+
       
       Admin Module : 
       Provides an admin dashboard for managing customers, vendors, and feedback.
@@ -65,4 +69,4 @@ http://localhost:8888/swagger-ui.html
 ### EasyBazaar API Module Endpoints
 
 
-  ###### Thank you for choosing EasyBazaar for your online shopping needs. Happy shopping! 🛍️
+  #### Thank you for choosing EasyBazaar for your online shopping needs. Happy shopping! 🛍️
