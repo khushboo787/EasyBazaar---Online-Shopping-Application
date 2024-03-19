@@ -16,10 +16,6 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 - CSS
 - JavaScript  
 
-### ER Diagram
-
-![ER-Diagram_EasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/4393d697-d721-45cf-b63c-0b950d125bc3)
-
 
 
 ### Modules
@@ -82,9 +78,13 @@ https://localhost:8888/
 http://localhost:8888/swagger-ui.html
 
 
- 
+ ### ER Diagram
+
+![ER-Diagram_EasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/4393d697-d721-45cf-b63c-0b950d125bc3)
 
 
 
 
-                                      Thank you for choosing EasyBazaar for your online shopping needs. Happy shopping! 🛍️
+
+
+                                  Thank you for choosing EasyBazaar for your online shopping needs. Happy shopping! 🛍️
