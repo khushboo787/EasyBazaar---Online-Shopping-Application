@@ -24,17 +24,18 @@ import com.bazaar.service.FileService;
 @RestController
 @RequestMapping("/imageController")
 public class FileController {
-	
+	  
 	
 	@Autowired
 	private FileService fileService;
 	
 	@GetMapping("/")
 	public String sayWelcome() {
-		return "Welcome to shopeasy";
+		return "Welcome to EasyBazaar";
 	}
 	
-	@Value("${project.image}")
+//	@Value("${project.image}")
+	@Value("${project.image:/default/path/to/images}")
 	private String path;
 	
 //	image upload 

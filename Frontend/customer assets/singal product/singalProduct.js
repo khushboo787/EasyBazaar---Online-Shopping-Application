@@ -63,7 +63,7 @@ let appendData = (data) => {
     // add data to all tags
     img.src = data.picture;
     h1.innerText = data.productName;
-    p1.innerText = "At shopeasy you can find your best choice product at low price and high quality, buy now we are having limited edition. hurry up!"
+    p1.innerText = "At EasyBazaar you can find your best choice product at low price and high quality, buy now we are having limited edition. hurry up!"
     h2.innerText = "₹" + data.afterDiscountPrice
     label.innerText = data.discount + "%";
     p2.innerText = "₹" + data.marketPrice + "  Market Price";
