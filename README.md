@@ -16,6 +16,11 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 - CSS
 - JavaScript  
 
+### ER Diagram
+
+![ER-Diagram_EasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/4393d697-d721-45cf-b63c-0b950d125bc3)
+
+
 
 ### Modules
 - Customer Module
