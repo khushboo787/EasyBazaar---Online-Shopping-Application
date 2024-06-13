@@ -8,7 +8,7 @@ public class WelcomeController {
 	
 	@GetMapping("/")
 	public String sayWelcome() {
-		return "Welcome to shopeasy visit notion for more details about APIs : https://unequaled-pulsar-4bd.notion.site/Shopeasy-com-43bb81d8e3034d87ad4ccdb6ea996c82";
+		return "Welcome to easyBazaar visit notion for more details about APIs : https://www.notion.so/EasyBazaar-com-8813b718c5bd400aac36d0ca2cbf7e08?pvs=4";
 	}
 
 }

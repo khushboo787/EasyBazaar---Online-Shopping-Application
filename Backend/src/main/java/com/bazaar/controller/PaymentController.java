@@ -25,7 +25,7 @@ public class PaymentController {
 	
 	@GetMapping("/")
 	public String sayWelcome() {
-		return "Welcome to shopeasy";
+		return "Welcome to easyBazaar";
 	}
 
 	@PostMapping(value = "/giveyourpayment/{orderId}")

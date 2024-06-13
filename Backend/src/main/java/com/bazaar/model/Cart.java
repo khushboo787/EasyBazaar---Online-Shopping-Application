@@ -36,7 +36,7 @@ public class Cart {
 	private Double totalPrice;
 	private Integer numberOfProduct;
 	
-//  Bidirectional mapping with customer class which will have customerId foreign key 
+
 	 @JsonIgnore
 	 @OneToOne(cascade = CascadeType.ALL)
 	 @JoinColumn(name="customerId")

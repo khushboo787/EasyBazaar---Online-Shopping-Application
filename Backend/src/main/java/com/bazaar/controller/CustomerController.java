@@ -20,7 +20,7 @@ import com.bazaar.model.Cart;
 import com.bazaar.model.Customer;
 import com.bazaar.service.CustomerService;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/customerController")

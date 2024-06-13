@@ -29,7 +29,7 @@ public class OrderController {
 	
 	@GetMapping("/")
 	public String sayWelcome() {
-		return "Welcome to shopeasy";
+		return "Welcome to easyBazaar";
 	}
 	
 	@PutMapping("/giveyourorder/{customerId}")
