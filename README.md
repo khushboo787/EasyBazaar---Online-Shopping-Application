@@ -26,8 +26,7 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 
 
 ### ER Diagram
-
-![ER-Diagram_EasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/4393d697-d721-45cf-b63c-0b950d125bc3)
+![ER-DiagramEasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/69b19f06-4c09-4241-b785-0dea184a4523)
 
 
 ### Swagger UI
