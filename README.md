@@ -24,35 +24,18 @@ EasyBazaar is an online shopping platform designed to connect customers with loc
 - Vendor Module  
 - Shipper Module
 
-### Features
+
+### ER Diagram
+
+![ER-Diagram_EasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/4393d697-d721-45cf-b63c-0b950d125bc3)
 
 
-      Customer Module : 
-      - Allows customers to create accounts and login.
-      - Provides search functionality to browse products by category.
-      - Supports sorting and filtering of products by price.
-      - Enables customers to view individual product pages, add items to the cart, and make purchases.
-      - Includes features for tracking order status, viewing order history, and making payments.
-      - Future enhancements include the ability to provide feedback.
+### Swagger UI
+![s1](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/1e86e3e4-f9c8-43f1-8fc6-7f7dc0c4aebe)
 
+![s11](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/a8c88be9-7500-4a5f-8057-0adde237faa5)
 
-      Vendor Module : 
-      - Provides a dashboard for vendors to manage their accounts and products.
-      - Allows vendors to add new products, manage quantities, and oversee order management.
-      - Includes features for tracking sales, managing orders, and analyzing sales data.
-      - Future enhancements include subscription management and feedback monitoring.
-
-      
-      Shipper Module : 
-      - Enables shippers to update order statuses and handle refund requests.
-
-      
-      Admin Module : 
-      - Provides an admin dashboard for managing customers, vendors, and feedback.
-      - Allows administrators to monitor company revenue and analyze sales data.
-      - Future enhancements include revenue tracking and feedback management.
-
-
+![s111](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/550e779f-4c95-4e3f-b3d9-3d1e05845de1)
 
 
 
@@ -76,11 +59,6 @@ Update the port number, username and password as per your local database config.
 https://localhost:8888/
 
 http://localhost:8888/swagger-ui.html
-
-
- ### ER Diagram
-
-![ER-Diagram_EasyBazaar](https://github.com/khushboo787/EasyBazaar-Online-Shopping-Application/assets/115460837/4393d697-d721-45cf-b63c-0b950d125bc3)
 
 
 
