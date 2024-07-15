@@ -26,7 +26,7 @@ public class ProductServiceImpl implements ProductService {
 	ProductDao productDao;
 
 	@Override
-	public Product getSingalProduct(String key, Integer productId) throws LoginException, ProductException {
+	public Product getSingleProduct(String key, Integer productId) throws LoginException, ProductException {
 		// TODO Auto-generated method stub
 
 		CurrentSession session = sessionDao.findByUuid(key);

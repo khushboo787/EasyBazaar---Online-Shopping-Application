@@ -39,11 +39,11 @@ public class ProductController {
 		return new ResponseEntity<List<Product>>(outPut, HttpStatus.CREATED);
 	}
 
-	@GetMapping("/singalproduct/{key}/{productId}")
-	public ResponseEntity<Product> getSingalProduct(@PathVariable("key") String key,
+	@GetMapping("/singleproduct/{key}/{productId}")
+	public ResponseEntity<Product> getSingleProduct(@PathVariable("key") String key,
 			@PathVariable("productId") Integer productId) throws LoginException, ProductException, CustomerException {
 
-		Product product = productService.getSingalProduct(key, productId);
+		Product product = productService.getSingleProduct(key, productId);
 		return new ResponseEntity<Product>(product, HttpStatus.ACCEPTED);
 
 	}

@@ -64,7 +64,7 @@ public class LoginServiceImpl implements LoginService{
 					String key = RandomString.make(6);
 					currentSession = new CurrentSession(existingCustomer.getCustomerId(),key,LocalDateTime.now(),credential.getUser_type());
 					sessionDao.save(currentSession);
-					return new LoginResponse("Customer Logged in Successfully Welcome to shopeasy ",key,userId);
+					return new LoginResponse("Customer Logged in Successfully Welcome to easyBazaar ",key,userId);
 					
 				}else {
 					throw new LoginException("Wrong Password");

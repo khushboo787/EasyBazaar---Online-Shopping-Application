@@ -3,6 +3,8 @@ package com.bazaar.service;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,6 +42,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	private CartDao cartDao;
 
+	@Transactional
 	@Override
 	public String createCustomerAccount(Customer customer) throws CustomerException, PersonalInfoException {
 		// TODO Auto-generated method stub

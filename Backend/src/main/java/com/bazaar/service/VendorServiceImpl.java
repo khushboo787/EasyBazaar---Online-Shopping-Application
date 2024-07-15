@@ -203,7 +203,7 @@ public class VendorServiceImpl implements VendorService {
 	}
 
 	@Override
-	public Vendor getSingalVendor(String key) throws LoginException {
+	public Vendor getSingleVendor(String key) throws LoginException {
 		// TODO Auto-generated method stub
 
 		CurrentSession session = sessionDao.findByUuid(key);

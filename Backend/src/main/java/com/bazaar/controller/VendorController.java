@@ -46,9 +46,7 @@ public class VendorController {
 	@PostMapping("/vendor")
 	public ResponseEntity<String> createVendorAccount(@Valid @RequestBody Vendor vendor) throws VendorException,PersonalInfoException, IOException{
 		
-//		processing and uploading file
-//		this.fileService.uploadImage(path, image);
-		
+ 	
 		String outPut = vendorService.createVendorAccount(vendor);
 		return new ResponseEntity<String>(outPut,HttpStatus.CREATED);
 	}
@@ -89,9 +87,9 @@ public class VendorController {
 	}
 	
 	@GetMapping("/singalvendor/{key}")
-	public ResponseEntity<Vendor> getSingalVendor(@PathVariable("key") String key) throws LoginException{
+	public ResponseEntity<Vendor> getSingleVendor(@PathVariable("key") String key) throws LoginException{
 		
-		Vendor vendor = vendorService.getSingalVendor(key);
+		Vendor vendor = vendorService.getSingleVendor(key);
 		return new ResponseEntity<Vendor>(vendor, HttpStatus.ACCEPTED);
 		
 	}

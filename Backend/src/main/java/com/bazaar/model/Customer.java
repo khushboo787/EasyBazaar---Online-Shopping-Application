@@ -15,6 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
@@ -40,10 +41,11 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Customer {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer customerId;
-	
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customer_seq")
+	    @SequenceGenerator(name = "customer_seq", sequenceName = "customer_sequence", allocationSize = 1)
+	    private Integer customerId;
+	 
 	@NotNull(message = "name cannot set as null")
     @NotEmpty(message =  "name cannot set as empty")
 	@NotBlank(message =  "name cannot set as blank")
