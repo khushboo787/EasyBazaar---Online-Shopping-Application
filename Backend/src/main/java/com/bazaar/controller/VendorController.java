@@ -86,7 +86,7 @@ public class VendorController {
 		return new ResponseEntity<Product>(outPut,HttpStatus.CREATED);
 	}
 	
-	@GetMapping("/singalvendor/{key}")
+	@GetMapping("/singlevendor/{key}")
 	public ResponseEntity<Vendor> getSingleVendor(@PathVariable("key") String key) throws LoginException{
 		
 		Vendor vendor = vendorService.getSingleVendor(key);
